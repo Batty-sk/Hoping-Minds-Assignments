@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damt</title>
+</head>
+<style>
+    body{
+        background-color: rgb(212, 253, 77);
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #main div{
+        margin-right: 40px;
+        font-size:60px;
+
+    }
+    #main div h1{
+        font-family:monospace;
+        font-size: 1em;
+        color:green;
+    }
+    #main div h1::after{
+        content: "";
+        display:block;
+        height: 4px;
+        width: 0%;
+        background-color: rgb(129, 127, 255);
+        transition: width 1s;
+    }
+    #main div h1:hover::after{
+        width: 100%;
+    }
+    .plrs >li{
+        font-family: monospace;
+        font-weight: bolder;
+    }
+    .achivements{
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 200;
+        font-size: 2rem;
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="heading">
+            <h1 style="text-align:center;">Top 5 Fav Sports</h1>
+        </div>
+        <div class="sports">
+            <h1>Football</h1>
+            <ul class="plrs">
+                <li>
+                    Totti
+                    <ul class="achivements">
+                        <li>Worlcup 2004</li>
+                    </ul>
+                </li>
+
+                <li>Messi
+                    <ul class="achivements">
+                        <li>Worlcup 2004</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div><h1>Badminton</h1>
+            <ul class="plrs">
+                <li>
+                    Pv Sindu
+                    <ul class="achivements">
+                        <li>Batminton Champions 2011</li>
+                    </ul>
+                </li>
+
+                <li>Saina Nehwal
+                    <ul class="achivements">
+                        <li>Batminton Champions 2007</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>Cricket</h1>
+            <ul class="plrs">
+                <li>
+                    Ms Dhoni
+                    <ul class="achivements">
+                        <li>World Cup 2007</li>
+                    </ul>
+                </li>
+
+                <li>Virat Kholi
+                    <ul class="achivements">
+                        <li>World Cup 2015</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>E-Sports</h1>
+            <ul class="plrs">
+                <li>
+                    Scout
+                    <ul class="achivements">
+                        <li>PMGC 2019</li>
+                    </ul>
+                </li>
+
+                <li>Mortal
+                    <ul class="achivements">
+                        <li>Best Iq Player 2020</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>
+                BasketBall
+            </h1>
+            <ul class="plrs">
+                <li>
+                    Jofery Fin
+                    <ul class="achivements">
+                        <li>Basketball league World Champions 2020</li>
+                    </ul>
+                </li>
+
+                <li>Rorito Godson
+                    <ul class="achivements">
+                        <li>Basketball league World Champions 2020</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
