@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggie Recipe</title>
+</head>
+<style>
+    body{
+        background-color: whitesmoke;
+        background-image:radial-gradient(rgb(240, 240, 214),rgb(172, 246, 172));
+    }
+    #main h1{
+        font-family: cursive;
+        font-size: 60px;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    #main h1::before{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 10px;
+        width:100px;
+        background-color:rgb(255, 223, 17);
+        animation-name: moveTo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    #main h1::after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 10px;
+        width:100px;
+        background-color:rgb(255, 223, 17);
+        animation-name: moveTo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes moveTo{
+        0%{
+            left:0;
+            background-color: rgb(255, 251, 0);;
+        }
+        50%{
+            left:80%;
+            background-color: rgb(31, 170, 9);
+
+        }
+        100%{
+            left:0;
+        }
+    }
+    #menu{
+        display: flex;
+        justify-content:center;
+
+    }
+    #menu div{
+        padding:20px;
+        box-sizing: border-box;
+        border:2px solid black;
+        box-shadow: 0px 0px 10px black;
+    }
+    #ingredients ul li{
+        font-family: monospace;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    #instructions ol li{
+        font-family:'Courier New', Courier, monospace;
+        font-size:larger;
+    }
+    h3{
+        font-weight: bold;
+        font-size:30px;
+        font-family: monospace;
+        color:goldenrod;
+
+    }
+    h3::after{
+        content: ":";
+    }
+</style>
+<body>
+    <div id="main">
+        <h1 >Maggie Reciepe</h1>
+        <div id="menu">
+            <div id="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Maggi</li>
+                    <li>Sauce</li>
+                    <li>Salt</li>
+                    <li>Water</li>
+                </ul>
+            </div>
+            <div id="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Bring water to a boil.</li>
+                    <li>Add magii to boiling water.
+                        <ol style="list-style-type:lower-roman">
+                            <li>Add salt to taste.</li>
+                            <li>Cook for 2 minutes, stirring occasionally.</li>
+                        </ol>
+                    </li>
+                    <li>Add sauce to a pan</li>
+                    <li>Mix cooked magii with sauce.</li>
+                    <li>Enjoy!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
